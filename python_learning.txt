@@ -1,0 +1,248 @@
+python
+[^\S\r\n]+$   White space
+How to install a module in python ?
+What is function ?
+
+How to remove whitespaces from a string in Python?
+To remove the whitespaces and trailing spaces from the string, Python providies strip([str]) built-in function. This function returns a copy of the string after removing whitespaces if present. Otherwise returns original string.
+
+string = "  javatpoint "
+string2 = "    javatpoint        "
+string3 = "       javatpoint"
+print(string)
+print(string2)
+print(string3)
+print("After stripping all have placed in a sequence:")
+print(string.strip())
+print(string2.strip())
+print(string3.strip())
+
+What is FW ?
+What is operating system ?
+
+ re
+ []	A set of characters	"[a-m]"
+\	Signals a special sequence (can also be used to escape special characters)	"\d"
+.	Any character (except newline character)	"he..o"
+^	Starts with	"^hello"
+$	Ends with	"world$"
+*	Zero or more occurrences	"aix*"
++	One or more occurrences	"aix+"
+{}	Exactly the specified number of occurrences	"al{2}"
+|	Either or	"falls|stays"
+()	Capture and group
+
+Write a regular expression the word which start from a and end with e
+What is polymorphism ?
+
+right a code to print 1 to 10 with while loop ?
+regular experession ?
+search key word for 6E10 and 4E10
+How to convert sentence into list of words ?
+How to run python file from cmd ?
+Having idea on batch file?
+__init__ in python
+what is constructor?
+difference between for and while loop ?
+Battery is DC powered or AC powerded ?
+What is Embedded system ?
+What is soldering ?
+Differene between soldering and welding ?
+Matarial used for soldering ?
+Windows and Linux knowledge ?
+Expansion of RF ?
+FM AM ?
+what is variable?
+what is string?
+how to concatinate two strings in python?
+list data types in python?
+can you print your name 100 times with one line of python code ?
+write a while loop it should break after 100 loops ?
+
+
+input: ABCDEF12
+output: 12EFCDAB
+
+Task sheduler in windows 10 , click on library -> create task
+general fil up , condition , Trigger, action
+
+a=1,2,3
+>>> type(a)
+<class 'tuple'>
+
+tup1 = ("JavaTpoint")
+print(type(tup1))   - str
+tup2 = ("JavaTpoint",)
+print(type(tup2)) - tup
+
+is it possible to make sub tuple from tuple ? Yes
+tup=(1,2,3,4) tup1=[:3]
+
+Note pad ++ line to line selection
+Ctrl + G, go to line 1000.
+
+Menu > Edit > Begin/End select.
+
+Ctrl + G, go to line 1997.
+
+Menu > Edit > Begin/End select.
+
+You now have your range selected with few clicks and no scroll.
+
+
+a, b = 1, 2
+ print (a, b)
+1 2
+
+a = b = c = 5
+print (a, b, c)
+5 5 5
+
+
+a = 1,2,3
+print (a)
+(1, 2, 3)
+
+Swaping
+num1, num2 = 10, 20
+print (num1, num2)
+10 20
+
+
+>>> num1, num2 = num2, num1
+>>> print (num1, num2)
+20 10
+
+namelist = [“ram”, “shyam”, “rahul”, “ravi”, “ashok”]
+>>> namestr = “”.join(namelist)
+>>> print (namestr)
+ramshyamrahulraviashok
+
+names = [“Anand”, “Rahul”, “Sairam”, “Shiva”]
+>>> print (*names, sep = ‘,’)
+Anand,Rahul,Sairam,Shiva
+>>>
+
+Creating a list of unique elements
+numlist = [1,1,2,2,3,3,3,4,4,5,5]
+>>> numlist = list (set (numlist))
+>>> print (numlist)
+[1, 2, 3, 4, 5]
+
+Printing a list of strings with comma as a separator
+Printing a list of strings as output separated by a comma can be done easily in the following way:
+
+>>> names = [“Anand”, “Rahul”, “Sairam”, “Shiva”]
+>>> print (*names, sep = ‘,’)
+Anand,Rahul,Sairam,Shiva
+>>>
+The ‘*’ in the above line is used for unpacking an iterable (a list in this case). The sep parameter specifies the character to use to separate the objects in the list. The default is ‘ ‘ (space).
+
+Creating a list of unique elements
+Removing duplicates in a list is easy using the set data structure, as the latter does not allow duplicate elements. The list can be converted to sets, which automatically eliminates duplicates. The set is converted back to the list and the new list will then have only unique elements.
+
+>>> numlist = [1,1,2,2,3,3,3,4,4,5,5]
+>>> numlist = list (set (numlist))
+>>> print (numlist)
+[1, 2, 3, 4, 5]
+>>>
+The interactive ‘_’ operator
+The ‘_’ (single underscore) is used as a temporary variable to save the result of the last executed expression only in the Python interactive shell, and its value can be printed or used in other ways.
+
+>>> a = 8
+>>> b = 7
+>>> a * b
+56
+>>>_
+56
+>>>
+Returning multiple values from a function
+Functions defined in Python can return multiple values unlike languages like C/C++ or Java, which allow only a single value to be returned. The multiple values are returned as a tuple.
+
+>>> #sample of Python function returning multiple values
+>>> def test():
+a = 1
+b = 2
+c = 3
+return a, b, c
+
+>>> d, e, f = test()
+>>> print (d, e, f)
+1 2 3
+>>>
+Chaining of comparison operators
+Python allows the use of multiple comparisons in a single expression by chaining the comparison operators. The expression returns True only if all the comparisons are true and returns False otherwise.
+
+>>> a = 10
+>>> 5 < a < 20
+True
+>>>
+The above is equal to writing ( a > 5) and (a < 20).
+Another example is given below:
+
+>>> 20 < a < 50
+False
+The above is equal to writing ( a > 20) and (a < 50).
+
+Use of ternary operator for conditional assignment
+Like many other programming languages, Python also has a facility that gives the effect of a ternary operator. Python defines a conditional expression, which helps to convert the if..else statement to a one-line conditional expression. This results in making the code concise due to multiple lines being reduced to a single line, which is also easier to read. The syntax is:
+
+<expression1> if <condition> else <expression>
+The condition is evaluated and if the result is True, expression1 is evaluated; if the result of the condition is False, expression2 is evaluated.
+
+>>> num = 55
+>>> “odd” if num % 2 == 1 else “even”
+‘odd’
+>>>
+A condition having three possibilities can be written using nested if else in a single line:
+
+>>> x, y, z = 30.5, 45.0, 76.8
+>>> “x is max” if x > y and x > z else “y is max” if y > x and y > z else “z is max”
+‘z is max’
+>>>
+System-006-Cold_Reset_Stress
+
+
+Simplified if construct
+When multiple tests are required in an if construct, the code is usually written in the following way:
+
+>>> if num == 4 or num == 8 or num == 12 or num == 16:
+The above could be simplified to:
+
+>>> if num in [4,8,12,16]:
+The result is the same, but the code is easier to read.
+
+Initialising a list with a repetitive value
+In case you need to create a list with repetitive values, the easiest way is to do the following:
+
+>>> lst = [1,2,3] * 6
+>>> print (lst)
+[1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>>
+Reversing a string
+Reversal of a string is one of the frequent tasks done in string processing. One easy way to reverse a string in Python is by slicing the strings:
+
+>>> name = “Sai Kumar”
+>>> print (a[::-1])
+>>> ‘ramuK iaS’
+>>>
+The Python tips given in this article help in writing concise and easy to understand code. The tips covered here are the most common and basic ones. There are innumerable such tips in Python and you will keep discovering new ways of doing things even after coding for a few years in this language. The best way to learn is to start coding. Happy Pythoning!
+
+Write a program to remove pre spaces in "   Mirafra" ?
+Write a regular expression to find 4 digit number in a Sentence " I am from Mirafra my id is 1234"
+can you please simply if num == 4 or num == 8 or num == 12 or num == 16: into list ?
+
+Declare two variables in one line and swapthem in another line
+a,b=1,2
+a,b=b,a
+
+list and tuple - basic
+Regural expression - One question
+
+
+yaml yml files
+
+How to print "Sumanth's code" in python - print('Sumanth\'s code') or print("Sumanth's code") or print("""Sumanth's code""")
+len(str)
+str[index]
+str[0:5] , substring
